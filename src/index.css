@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+
+@theme {
+  --font-urdu: "Noto Sans Arabic", sans-serif;
+}
+
+@layer base {
+  html {
+    direction: rtl;
+    font-family: var(--font-urdu);
+  }
+  
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+}
+
+.glass-dark {
+  @apply bg-slate-900/70 backdrop-blur-lg border border-slate-800/20 shadow-xl;
+}
